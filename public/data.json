@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Logan Huntzberger",
+        "total_revenue": 220
+    },
+    {
+        "name": "Luke Danes",
+        "total_revenue": 175
+    },
+    {
+        "name": "Lane Kim",
+        "total_revenue": 150
+    },
+    {
+        "name": "Rory Gilmore",
+        "total_revenue": 145
+    },
+    {
+        "name": "Lorelai Gilmore",
+        "total_revenue": 140
+    },
+    {
+        "name": "Kirk Gleason",
+        "total_revenue": 120
+    },
+    {
+        "name": "Sookie St. James",
+        "total_revenue": 90
+    },
+    {
+        "name": "Jess Mariano",
+        "total_revenue": 40
+    }
+]

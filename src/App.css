@@ -1,38 +1,132 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  font-family: "Open Sans", sans-serif;
+  color: #000;
   min-height: 100vh;
+}
+
+.navbar {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  padding: 1rem 8rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left,
+.nabar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 50px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 2rem;
+  font-weight: 600;
+}
+
+.get-started-btn {
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-image: linear-gradient(89.82deg, #5a50e2 .12%, #12baba 99.82%);
   color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.get-started-btn:hover {
+  background-image: linear-gradient(89.82deg, #4b42d7 .12%, #12acba 99.82%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.authors-container {
+  max-width: 500px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.authors-header {
+  text-align: center;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+}
+
+.authors-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.author-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 10px;
+  transition: opacity 0.8s ease, padding 0.8s ease, max-height 0.8s ease;
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.author-item-removing {
+  opacity: 0;
+  max-height: 0;
+  padding: 0;
+}
+
+.author-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.author-info {
+  flex-grow: 1;
+}
+
+.author-name {
+  margin: 0;
+  font-size: 14px;
+}
+
+.author-revenue {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.back-icon {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.cross-mark-icon {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: #999999;
+  font-size: 24px;
+}
+
+.cross-mark-icon:hover {
+  color: #797979;
 }
